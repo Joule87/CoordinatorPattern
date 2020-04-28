@@ -21,6 +21,7 @@
 		F4BF734924570F3B008143A1 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF734824570F3B008143A1 /* CreateAccountViewController.swift */; };
 		F4BF734D24572099008143A1 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF734C24572099008143A1 /* BuyCoordinator.swift */; };
 		F4F8F685245747DF00D32EB8 /* Coordinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8F684245747DF00D32EB8 /* Coordinable.swift */; };
+		F4F8F6882458680800D32EB8 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8F6872458680800D32EB8 /* AppBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F4BF734824570F3B008143A1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		F4BF734C24572099008143A1 /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 		F4F8F684245747DF00D32EB8 /* Coordinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinable.swift; sourceTree = "<group>"; };
+		F4F8F6872458680800D32EB8 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				F4BF734224570B5D008143A1 /* Storyboarded.swift */,
+				F4F8F6872458680800D32EB8 /* AppBuilder.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				F4BF734D24572099008143A1 /* BuyCoordinator.swift in Sources */,
 				F4F8F685245747DF00D32EB8 /* Coordinable.swift in Sources */,
 				F4BF734124570AEE008143A1 /* Coordinator.swift in Sources */,
+				F4F8F6882458680800D32EB8 /* AppBuilder.swift in Sources */,
 				F4BF734524570CCE008143A1 /* MainCoordinator.swift in Sources */,
 				F4BF7331245708D3008143A1 /* ViewController.swift in Sources */,
 				F4BF734324570B5D008143A1 /* Storyboarded.swift in Sources */,
