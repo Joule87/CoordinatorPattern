@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n99-qR-ZUw">
-                                <rect key="frame" x="20" y="194" width="374" height="50"/>
+                                <rect key="frame" x="20" y="297" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hH0-2Y-jIc"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIQ-JU-5Hy">
-                                <rect key="frame" x="20" y="254" width="374" height="50"/>
+                                <rect key="frame" x="20" y="357" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UTi-wo-Coi"/>
@@ -45,39 +45,60 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select product: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D31-Tb-759">
-                                <rect key="frame" x="20" y="140" width="172" height="29"/>
+                                <rect key="frame" x="20" y="243" width="172" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bvD-sO-yf7">
-                                <rect key="frame" x="202" y="139" width="131" height="32"/>
+                                <rect key="frame" x="243" y="242" width="131" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2mr-aF-4rm">
+                                <rect key="frame" x="325" y="191" width="51" height="31"/>
+                                <connections>
+                                    <action selector="didToggleInterfaceStyle:" destination="BYZ-38-t0r" eventType="valueChanged" id="PQL-Ms-JlL"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch Interface Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-c4-GBH">
+                                <rect key="frame" x="20.000000000000014" y="192" width="238.33333333333337" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qIQ-JU-5Hy" secondAttribute="trailing" constant="20" id="1A5-pQ-bkK"/>
-                            <constraint firstItem="bvD-sO-yf7" firstAttribute="leading" secondItem="D31-Tb-759" secondAttribute="trailing" constant="10" id="ETw-WK-dEJ"/>
+                            <constraint firstItem="2mr-aF-4rm" firstAttribute="centerY" secondItem="EhM-c4-GBH" secondAttribute="centerY" id="9fK-A9-NLT"/>
                             <constraint firstItem="n99-qR-ZUw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G0N-VK-RiI"/>
-                            <constraint firstItem="bvD-sO-yf7" firstAttribute="centerY" secondItem="D31-Tb-759" secondAttribute="centerY" id="GIm-YB-Dn4"/>
+                            <constraint firstItem="bvD-sO-yf7" firstAttribute="centerY" secondItem="D31-Tb-759" secondAttribute="centerY" id="LGD-Ya-l5U"/>
+                            <constraint firstItem="bvD-sO-yf7" firstAttribute="trailing" secondItem="2mr-aF-4rm" secondAttribute="trailing" id="PIp-rl-Pqz"/>
                             <constraint firstItem="D31-Tb-759" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Syz-Pl-sPu"/>
+                            <constraint firstItem="EhM-c4-GBH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YFU-C8-o4k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n99-qR-ZUw" secondAttribute="trailing" constant="20" id="cpg-oI-tp5"/>
                             <constraint firstItem="n99-qR-ZUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fKB-te-cZ9"/>
-                            <constraint firstItem="D31-Tb-759" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="lRz-fS-rsB"/>
                             <constraint firstItem="qIQ-JU-5Hy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nMs-EW-EWD"/>
+                            <constraint firstItem="EhM-c4-GBH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="oxE-UD-kWP"/>
                             <constraint firstItem="qIQ-JU-5Hy" firstAttribute="top" secondItem="n99-qR-ZUw" secondAttribute="bottom" constant="10" id="pHN-3E-RCj"/>
                             <constraint firstItem="qIQ-JU-5Hy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sPj-yw-fDd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2mr-aF-4rm" secondAttribute="trailing" constant="40" id="tgG-nH-ig5"/>
                             <constraint firstItem="n99-qR-ZUw" firstAttribute="top" secondItem="D31-Tb-759" secondAttribute="bottom" constant="25" id="x5x-KX-8tZ"/>
+                            <constraint firstItem="D31-Tb-759" firstAttribute="top" secondItem="EhM-c4-GBH" secondAttribute="bottom" constant="22" id="y4Q-oW-kdP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buyButton" destination="n99-qR-ZUw" id="3Od-nu-Z1D"/>
+                        <outlet property="createAccountButton" destination="qIQ-JU-5Hy" id="2Mi-MW-wdx"/>
+                        <outlet property="interfaceStyleSwitch" destination="2mr-aF-4rm" id="pP9-AQ-nFI"/>
                         <outlet property="productSegment" destination="bvD-sO-yf7" id="hFS-TB-p5E"/>
+                        <outlet property="selectProductLabel" destination="D31-Tb-759" id="Cov-8V-JTg"/>
+                        <outlet property="switchInterfaceStyleLabel" destination="EhM-c4-GBH" id="Gks-Ht-6G4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE ACCOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrT-fc-DI0">
-                                <rect key="frame" x="32" y="424" width="350.5" height="48"/>
+                                <rect key="frame" x="31.666666666666657" y="424" width="350.66666666666674" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -120,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwA-gb-yot">
-                                <rect key="frame" x="167" y="424" width="80.5" height="48"/>
+                                <rect key="frame" x="166.66666666666666" y="424" width="80.666666666666657" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
